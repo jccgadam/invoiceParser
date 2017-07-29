@@ -1,0 +1,19 @@
+<body>
+  <!-- <h1>Invoice Parser</h1> -->
+</body>
+
+<template name="parser">
+
+  <div class='row'>
+    <div class='col-lg-1'>
+    </div>
+    <div class='col-lg-10'>
+      <h1>Invoice Parser</h1>
+      <input id='inviceInput' type='file'/>
+      {{#if downloadFile}}
+        {{>reactiveTable collection=downloadFile}}
+        <button  class='btn btn-primary' id='downloadFile'>Download!</button>
+      {{/if}}
+    </div>
+  </div>
+</template>
